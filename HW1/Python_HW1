@@ -1,0 +1,24 @@
+nestedList =[]
+Row = int(input("Row: "))
+Col = int(input("Col: "))
+
+for x in range (Row):
+    print(f"Row {x+1}")
+    innerList = []
+    for y in range (Col):
+        print(f"Enter Score {y+1}")
+        score = float(input())
+        innerList.append(score)
+    nestedList.append(innerList)
+print(f"The numbers are: ")  
+for row in nestedList:
+    print(row)
+
+find = float(input("Find a number: "))
+
+for x in range (Row):
+    for y in range (Col):
+        if nestedList[x][y]==find:
+            print(f"Number {find} found at Row {x+1}, Column {y+1}")
+            
+        
