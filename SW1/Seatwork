@@ -1,0 +1,12 @@
+def convert(dollars):
+    peso= 57.17
+    yen= 146.67
+
+    philpeso= dollars*peso
+    japyen= dollars*yen
+
+    return philpeso, japyen
+
+for dollars in (59, 200, 500):
+    convertdol = convert(dollars)
+    print(f"${dollars} > Phippine Peso: Php {convertdol[0]}, Japanese Yen: {convertdol[1]} JPY")
